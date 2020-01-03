@@ -1,0 +1,101 @@
+import React, { Component } from 'react'
+import './main.scss'
+import Axios from 'axios'
+import config from '../../config.js'
+import jwt_decode from 'jwt-decode'
+
+const Api = config.api
+
+class Login extends Component {
+
+    constructor() {
+        super()
+        this.state = {
+            username: '',
+            password: ''
+        }
+    }
+
+    onchange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
+    onSubmit = async () => {
+
+        let post = {
+            username: this.state.username,
+            password: this.state.password
+        }
+        try {
+            let res = await Axios.post(`${Api}/signin`, post)
+            localStorage.setItem('token', res.data.token)
+            let decode = jwt_decode(res.data.token)
+            window.location = "/home"
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    render() {
+        return (
+            <div className="login-page body-main" >
+
+                <div className="login-box">
+                    <div className="login-logo">
+                        <a href="#">เช็คค่าน้ำ ค่าไฟ</a>
+                    </div>
+                    {/* /.login-logo */}
+                    <div className="card">
+                        <div className="card-body login-card-body">
+                            <p className="login-box-msg">ล็อคอินเข้าสู้ระบบเช็คค่าน้ำค่าไฟของท่าน</p>
+                            {/* <form action="#" method="post"> */}
+                            <div className="input-group mb-3">
+                                <input type="text" className="form-control" placeholder="Username" name="username" onChange={this.onchange} />
+                                <div className="input-group-append">
+                                    <div className="input-group-text">
+                                        <span className="fas fa-user-tie" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="input-group mb-3">
+                                <input type="password" className="form-control" placeholder="Password" name="password" onChange={this.onchange} />
+                                <div className="input-group-append">
+                                    <div className="input-group-text">
+                                        <span className="fas fa-lock" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-8">
+                                    <div className="icheck-primary">
+                                        <input type="checkbox" id="remember" />
+                                        <label htmlFor="remember">
+                                            Remember Me
+                                            </label>
+                                    </div>
+                                </div>
+                                {/* /.col */}
+                                <div className="col-4">
+                                    <button onClick={this.onSubmit} type="button" className="btn btn-success btn-block">Sign In</button>
+                                </div>
+                                {/* /.col */}
+                            </div>
+                            {/* </form> */}
+                            {/* /.social-auth-links */}
+                            <p className="mb-1">
+                                <a href="#">I forgot my password</a>
+                            </p>
+                        </div>
+                        {/* /.login-card-body */}
+                    </div>
+                </div>
+
+            </div>
+        )
+    }
+}
+
+export default Login

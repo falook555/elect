@@ -1,0 +1,33 @@
+.body-main {
+  background-image: linear-gradient(-270deg, #74ebd5 , #ACB6E5);
+}
+
+.total-font{
+  font-size: 30px;  //ปกติ
+  @media only screen and (max-width : 500px) {
+  font-size: 25px;  //จอโทรศัพท์
+    
+  }
+}
+
+.body-font{
+  font-size: 20px;  //ปกติ
+  @media only screen and (max-width : 500px) {
+  font-size: 15px;  //จอโทรศัพท์
+    
+  }
+}
+
+.home-font{
+  font-size: 28px;  //ปกติ
+  @media only screen and (max-width : 500px) {
+  font-size: 25px;  //จอโทรศัพท์
+    
+  }
+}
+
+.card {
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  margin-bottom: 0rem;
+}
+
