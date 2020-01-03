@@ -17,7 +17,7 @@ export default class AdminContentContact extends Component {
                                         เบอร์โทรศัพท์
                                         </p>
                                     <p style={{ marginTop: 5 }}>
-                                        082-089-3614
+                                        2143,2144
                                         </p>
                                     <p style={{ marginTop: 5 }}>
                                         24 ชั่วโมง
@@ -31,7 +31,7 @@ export default class AdminContentContact extends Component {
                                         Facebook
                                     </p>
                                     <p style={{ marginTop: 5 }}>
-                                        กนต์ธร โทนทรัพย์
+                                        
                                     </p>
                                     <p style={{ marginTop: 5 }}>
                                         24 ชั่วโมง
@@ -44,7 +44,7 @@ export default class AdminContentContact extends Component {
                                     <p style={{ marginTop: 5, fontSize: 18, fontWeight: 'bold' }}>
                                         Line
                                     </p><p style={{ marginTop: 5 }}>
-                                        T.Konthorn007
+                                        
                                     </p><p style={{ marginTop: 5 }}>
                                         24 ชั่วโมง
                                     </p>
@@ -59,7 +59,7 @@ export default class AdminContentContact extends Component {
                                         Email
                                     </p>
                                     <p style={{ marginTop: 5 }}>
-                                        Konthorn.t@psru.ac.th
+                                        
                                     </p><p style={{ marginTop: 5 }}>
                                         24 ชั่วโมง
                                     </p>
@@ -72,8 +72,9 @@ export default class AdminContentContact extends Component {
                                         ที่อยู่
                                     </p>
                                     <p style={{ marginTop: 5 }}>
-                                        1 หมู่ 8 ตำบล คลองตาล อำเภอ ศรีสำโรง สุโขทัย 64120 โทร 055-682030-42
-                                        อุบัติเหตุ ฉุกเฉิน แจ้ง หน่วยกู้ชีพศรีสังวร โทร 1669 หรือ 055-681331
+                                        1 หมู่ 8 ตำบล คลองตาล อำเภอ ศรีสำโรง สุโขทัย 64120
+                                        โทร 055-682030-42 อุบัติเหตุ ฉุกเฉิน แจ้ง หน่วยกู้ชีพศรีสังวร 
+                                        โทร 1669 หรือ 055-681331
                                     </p>
                                     <p style={{ marginTop: 5 }}>
                                         24 ชั่วโมง
