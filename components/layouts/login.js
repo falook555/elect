@@ -57,7 +57,7 @@ class Login extends Component {
                             <p className="login-box-msg">ล็อคอินเข้าสู้ระบบเช็คค่าน้ำค่าไฟของท่าน</p>
                             {this.state.isMsg  ? 
                             <p className="login-box-msg" style={{ color:'red'}}>ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</p> : ''
-    }
+                            }
                             {/* <form action="#" method="post"> */}
                             <div className="input-group mb-3">
                                 <input type="text" className="form-control" placeholder="Username" name="username" onChange={this.onchange} />
@@ -76,27 +76,11 @@ class Login extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-8">
-                                    <div className="icheck-primary">
-                                        <input type="checkbox" id="remember" />
-                                        <label htmlFor="remember">
-                                            Remember Me
-                                            </label>
-                                    </div>
+                                <div className="col-md-12">
+                                    <button onClick={this.onSubmit} type="button" className="btn btn-success btn-block ">Sign In</button>
                                 </div>
-                                {/* /.col */}
-                                <div className="col-4">
-                                    <button onClick={this.onSubmit} type="button" className="btn btn-success btn-block">Sign In</button>
-                                </div>
-                                {/* /.col */}
                             </div>
-                            {/* </form> */}
-                            {/* /.social-auth-links */}
-                            <p className="mb-1">
-                                <a href="#">I forgot my password</a>
-                            </p>
                         </div>
-                        {/* /.login-card-body */}
                     </div>
                 </div>
 
