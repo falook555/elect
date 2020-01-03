@@ -1,8 +1,9 @@
 
 const config = {
     font: 'Kanit',
-    api: 'http://localhost:4000'
+    api: 'http://swdata.srisangworn.go.th:4005'
 }
+
 
 export default config
 
