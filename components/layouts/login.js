@@ -53,7 +53,7 @@ class Login extends Component {
                     </div>
                     <div className="card">
                         <div className="card-body login-card-body">
-                            <p className="login-box-msg">ล็อคอินเข้าสู้ระบบเช็คค่าน้ำค่าไฟของท่าน</p>
+                            <p className="login-box-msg">ล็อคอินเข้าสู่ระบบเช็คค่าน้ำค่าไฟของท่าน</p>
                             {this.state.isMsg  ? 
                             <p className="login-box-msg" style={{ color:'red'}}>ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</p> : ''
                             }
