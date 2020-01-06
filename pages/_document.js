@@ -37,7 +37,6 @@ class MyDocument extends Document {
                     <script src="static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
                     {/* AdminLTE */}
                     <script src="static/dist/js/adminlte.js"></script>
-
                     <script src="static/dist/js/demo.js"></script>
                 </Head>
                 <body className="sidebar-mini sidebar-collapse control-sidebar-open">

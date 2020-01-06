@@ -53,10 +53,10 @@ export default class AdminContentDetail extends Component {
                                 sum = parseFloat(water) + parseFloat(item.paypal)
                                 let tshow = i == 0 ? 'collapse show' : 'collapse'
                                 return <div id="accordion">
-                                    <div className="card">
+                                    <div className="card  bg-warning">
                                         <div className="card-header" id="headingOne">
                                             <h5 className="mb-0">
-                                                <button className="btn btn-link" data-toggle="collapse" data-target={"#collapseOne" + i} aria-expanded={i == 0 ? true : false} aria-controls={"collapseOne" + i}>
+                                                <button className="btn btn-link total-font" data-toggle="collapse" data-target={"#collapseOne" + i} aria-expanded={i == 0 ? true : false} aria-controls={"collapseOne" + i}>
                                                     Meter {item.meter}
                                                 </button>
                                             </h5>
@@ -93,7 +93,7 @@ export default class AdminContentDetail extends Component {
                                                         <tr>
                                                             <td>เปอร์เซ็นที่ต้องจ่าย</td>
                                                             <td>{item.persent}</td>
-                                                            <td>เปอร์เซ็น</td>
+                                                            <td>%</td>
                                                         </tr>
                                                         <tr className="total-font">
                                                             <td>ยอดค่าไฟจ่ายตามจริง</td>

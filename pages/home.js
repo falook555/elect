@@ -8,9 +8,9 @@ const font = config.font
 export default class Home extends Component {
 
 
-  componentDidMount(){
+  componentDidMount() {
     const token = localStorage.getItem('token')
-    if (token == null){
+    if (token == null) {
       window.location = "/"
     }
   }

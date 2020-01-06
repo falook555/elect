@@ -29,7 +29,7 @@ export default class AdminContentContact extends Component {
                         <div className="text-center">
                                 <div style={{ marginTop: 10 }}>
                                     <p style={{ marginTop: 5, fontSize: 18, fontWeight: 'bold' }}>
-                                        Create by นาย กนต์ธร โทนทรัพย์ สาขาวิศวกรรมคอมพิวเตอร์ คณะเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยราชภัฏพิบูลสงคราม
+                                        Create by นายกนต์ธร โทนทรัพย์ สาขาวิศวกรรมคอมพิวเตอร์ คณะเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยราชภัฏพิบูลสงคราม
                                     </p>
                                 </div>
                             </div>

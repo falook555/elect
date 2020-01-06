@@ -10,6 +10,6 @@ const config = {
 // }
 
 
-export default config
+// export default config
 
 // style={{ fontFamily: font }}
