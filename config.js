@@ -8,4 +8,6 @@ const config = {
 //     font: 'Kanit',
 //     api: 'http://localhost:4005'
 // }
-// export default config
+
+
+export default config
