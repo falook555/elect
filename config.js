@@ -8,8 +8,6 @@ const config = {
 //     font: 'Kanit',
 //     api: 'http://localhost:4005'
 // }
-
-
 // export default config
 
-// style={{ fontFamily: font }}
+// style={{fontFamily: font}}
