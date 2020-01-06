@@ -9,5 +9,3 @@ const config = {
 //     api: 'http://localhost:4005'
 // }
 // export default config
-
-// style={{fontFamily: font}}
